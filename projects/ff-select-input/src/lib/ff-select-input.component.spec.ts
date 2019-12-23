@@ -22,7 +22,7 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
     width: 500px;
     margin: 20px auto;
     position: relative;
-  }`, `ff-select-input:last-child {
+  }`, `ff-select-input {
     position: absolute;
     bottom: 0;
     right: 0;

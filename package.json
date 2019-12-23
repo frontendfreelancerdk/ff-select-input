@@ -12,6 +12,7 @@
     "build_lib": "ng build ff-select-input",
     "prebuild_lib": "node copy_readme",
     "watch_lib": "ng build ff-select-input --watch",
+    "prepub_lib": "npm run build_lib",
     "pub_lib": "cd projects/ff-select-input && npm publish"
   },
   "private": true,

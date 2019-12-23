@@ -93,7 +93,6 @@ interface FFOptionsListInterface {
 
 ```typescript
   @Input() value: string | number | boolean | (string | number | boolean)[];
-  @Input() defaultValue: string | number | boolean | (string | number | boolean)[];
 ```
 > The [value] attribute sets current value. 
 > It can be string, number or boolean type and for multi select - arrays of these types.
@@ -147,13 +146,12 @@ interface FFOptionsListInterface {
   width: 500px;
   margin: 20px auto;
   position: relative;
-
+}
   ff-select-input:last-child {
     position: absolute;
     bottom: 0;
     right: 0;
   }
-}
 
 ```
 
