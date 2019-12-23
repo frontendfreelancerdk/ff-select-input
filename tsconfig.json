@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ff-select-input": [
+        "dist/ff-select-input"
+      ],
+      "ff-select-input/*": [
+        "dist/ff-select-input/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

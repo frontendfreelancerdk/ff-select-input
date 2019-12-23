@@ -1,0 +1,9 @@
+sudo: required
+addons:
+  chrome: stable
+language: node_js
+node_js:
+  - "10.9.0"
+script:
+  - npm run test_lib
+  - npm run build_lib

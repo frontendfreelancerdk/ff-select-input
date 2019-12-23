@@ -1,0 +1,30 @@
+//colors
+$color_first: rgb(25, 87, 118);
+$color_second: rgb(33, 38, 39);
+$color_third: rgb(236, 235, 236);
+$color_fourth: rgb(255, 182, 71);
+$color_inputs: rgb(56, 178, 190);
+$color_text: $color_second;
+$color_arrow: rgb(23, 62, 73);
+$color_alert: rgb(232, 99, 99);
+$color-base: rgb(255, 255, 255);
+$color-link:$color_first;
+$color-link-hover:$color_fourth;
+$color-link-visited:$color-link;
+//sizes
+
+$breakpoints: (
+  "xxs": 320px,
+  "xs": 500px,
+  "sm": 768px,
+  "sd": 835px,
+  "md": 992px,
+  "lg": 1200px,
+);
+$header_size: 33px;
+$text-size: 16px;
+$max_width: 950px;
+
+$input-border-radius: 3px;
+
+$image-path: "/assets/img/"

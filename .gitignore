@@ -44,3 +44,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Coverage
+/projects/ff-select-input/coverage
+
+# Readme
+/projects/ff-select-input/README.md

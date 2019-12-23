@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'ff-root',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ff-select-input-app';
+  disabled: boolean = false;
+
+  log(e) {
+    console.log(e);
+  }
 }

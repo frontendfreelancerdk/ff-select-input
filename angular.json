@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "ff-select-input": {
+      "projectType": "library",
+      "root": "projects/ff-select-input",
+      "sourceRoot": "projects/ff-select-input/src",
+      "prefix": "ff",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ff-select-input/tsconfig.lib.json",
+            "project": "projects/ff-select-input/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ff-select-input/src/test.ts",
+            "tsConfig": "projects/ff-select-input/tsconfig.spec.json",
+            "karmaConfig": "projects/ff-select-input/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ff-select-input/tsconfig.lib.json",
+              "projects/ff-select-input/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ff-select-input-app"
 }

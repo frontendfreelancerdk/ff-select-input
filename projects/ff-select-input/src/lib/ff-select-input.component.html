@@ -1,0 +1,31 @@
+<select *ngIf="isMobile" [multiple]="multiSelect" [disabled]="disabled"
+        [ngClass]="{'disabled':disabled}" class="select" [(ngModel)]="activeDisplay" (ngModelChange)="onSelected()">
+  <option *ngFor="let option of options" [ngValue]="option">{{option.text}}</option>
+</select>
+<div
+  class="dropdown"
+  [ngClass]="{'disabled': disabled,'multiselect':multiSelect }"
+  #dropdown>
+  <div class="selector" (click)="disabled|| toggle()">
+    <span class="active-display">{{getActiveTextValue()}}</span>
+    <span class="caret-wrapper">
+      <span class="caret-up"></span>
+      <span class="caret-down"></span>
+    </span>
+  </div>
+  <ul #list
+      class="list"
+      role="menu"
+      [ngClass]="{'above': above, 'animated':animated}"
+      [ngStyle]="{'max-height': maxHeight+'px'}"
+      aria-labelledby="single-button"
+      [@slideInOut]="_animationState"
+      (@slideInOut.done)="_animationDone()"
+      (@slideInOut.start)="_animationStart()">
+    <li [ngClass]="{'selected': _isListItemActive(option) && multiSelect}" class="item"
+        (click)="disabled|| _onItemClick(option)"
+        *ngFor="let option of options" role="menuitem">
+      <span *ngIf="multiSelect" class="check-icon"></span><span>{{option.text}}</span>
+    </li>
+  </ul>
+</div>
